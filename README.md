@@ -8,7 +8,7 @@
 ![model2](https://latex.codecogs.com/svg.image?m=\gamma_{\textit{e}}^\intercal&space;x&plus;g\left(z\right)&plus;\epsilon_2.)
 - Total model
 ![model3](https://latex.codecogs.com/svg.image?&space;y=\theta_{\textit{e}}^\intercal&space;x&plus;h(z)&plus;\epsilon_3.)
-- ![covariates](https://latex.codecogs.com/svg.image?\text{Response}:y\in\mathbb{R},\text{exposure}:x\in\mathbb{R}^q,\text{mediator}:m\in\mathbb{R}^p,\text{confounder}:z\in\mathbb{R}^r)
+- ![covariates](https://latex.codecogs.com/svg.image?\text{Exposure}:x\in\mathbb{R}^q,\text{mediator}:m\in\mathbb{R}^p,\text{confounder}:z\in\mathbb{R}^r)
 - Direct effect: ![dirrect](https://latex.codecogs.com/svg.image?\alpha_{\textit{e}})
 - Indirect effect: ![indirect](https://latex.codecogs.com/svg.image?\beta_{\textit{e}}=\theta_{\textit{e}}-\alpha_{\textit{e}})
 -------------------------------------------------------------
