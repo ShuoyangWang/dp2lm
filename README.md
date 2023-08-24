@@ -19,20 +19,23 @@
 # Inference via deep neural networks
 -------------------------------------------------------------
 
-# Deep Neural Network Hyperparameters and Structures
+# Deep neural network hyperparameters and structures
 - L: number of layers 
 - p: neurons per layer (uniform for all layers)
 - s: dropout rate (data dependent)
-- Loss function: absolute value loss/ square loss/ huber loss/ check loss
+- Loss function: mean squared loss
 - Batch size: data dependent
 - Epoch number: data dependent
 - Activation function: ReLU
-- Optimizer: Adam 
+- Optimizer: Adam
+- Regularizer: SCAD
 -------------------------------------------------------------
 
 # Function descriptions
-- "rdnn.R": robust dnn estimation for multi-dimensional funtional data, with dimension no more than 4. More details can be found in the file.
+- "estimation.R": estimation of direct effect via regularization and indirect effect by difference method using neural networks.
+- "inference_direct.R": inference of direct effect using neural networks
+- "inference_indirect.R" inference of indirect effect using neural networks
 -------------------------------------------------------------
 
 # Examples
-- "example.R": 2D and 3D functional data regression examples. Cauchy and Slash distributed measurement errors are added to the observations. 
+- "data.R": a data generating example.
