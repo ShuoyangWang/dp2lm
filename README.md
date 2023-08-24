@@ -39,7 +39,7 @@
 
 - Wald test for indirect effect:
 
-![wald](https://latex.codecogs.com/svg.image?T_n^{\textit{IE}}=n\hat{\beta}_{\textit{e}}^\intercal\hat{\Omega}^{-1}\hat{\beta}_{\textit{e}}\sim\chi^2_q,\enspace\hat{\Omega}\enspace\text{is&space;the&space;estimated&space;covariance&space;matrix}.)
+![wald](https://latex.codecogs.com/svg.image?T_n^{\textit{IE}}=n\hat{\beta}_{\textit{e}}^\intercal\hat{\Omega}^{-1}\hat{\beta}_{\textit{e}}\sim\chi^2_q\enspace\text{under}\enspace{H_0},\enspace\hat{\Omega}\enspace\text{is&space;the&space;estimated&space;covariance&space;matrix}.)
 
 -------------------------------------------------------------
 
