@@ -16,18 +16,31 @@
 # Estimation via deep neural networks 
 - Estimation of direct effect:
 
-![direct](https://latex.codecogs.com/svg.image?\left(\hat{\alpha}_{\textit{m}},\hat{\alpha}_{\textit{e}},\hat{f}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\alpha_{\textit{m}}^\intercal&space;m_{i}-\alpha_{\textit{e}}^\intercal&space;x_{i}-f(z_i)\right)^2&plus;\sum_{j=1}^p&space;P_{\lambda}\left(\mid\alpha_{\textit{m}j}\mid\right))
+![direct](https://latex.codecogs.com/svg.image?\left(\hat{\alpha}_{\textit{m}},\hat{\alpha}_{\textit{e}},\hat{f}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\alpha_{\textit{m}}^\intercal&space;m_{i}-\alpha_{\textit{e}}^\intercal&space;x_{i}-f(z_i)\right)^2&plus;\sum_{j=1}^p&space;P_{\lambda}\left(\mid\alpha_{\textit{m}j}\mid\right),)
 
-![Scad](https://latex.codecogs.com/svg.image?&space;P'_{\lambda}(t)=\lambda\left(\mathbb{I}\left(t\leq\lambda\right)&plus;\frac{\left(a\lambda-t\right)_&plus;}{\left(a-1\right)\lambda}\mathbb{I}\left(t>\lambda\right)\right),a=3.7)
+![Scad](https://latex.codecogs.com/svg.image?&space;P'_{\lambda}(t)=\lambda\left(\mathbb{I}\left(t\leq\lambda\right)&plus;\frac{\left(a\lambda-t\right)_&plus;}{\left(a-1\right)\lambda}\mathbb{I}\left(t>\lambda\right)\right),a=3.7.)
 
 - Estimation of indirect effect:
 
-  ![total](https://latex.codecogs.com/svg.image?\left(\hat{\theta}_{\textit{e}},\hat{h}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\theta_{\textit{e}}^\intercal&space;x_{i}-h(z_i)\right)^2)
+  ![total](https://latex.codecogs.com/svg.image?\left(\hat{\theta}_{\textit{e}},\hat{h}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\theta_{\textit{e}}^\intercal&space;x_{i}-h(z_i)\right)^2,)
 
-  ![indirect](https://latex.codecogs.com/svg.image?\hat{\beta}_{\textit{e}}=\hat{\theta}_{\textit{e}}-\hat{\alpha}_{\textit{e}})
+  ![indirect](https://latex.codecogs.com/svg.image?\hat{\beta}_{\textit{e}}=\hat{\theta}_{\textit{e}}-\hat{\alpha}_{\textit{e}}.)
 
 -------------------------------------------------------------
 # Inference via deep neural networks
+- F-type test for direct effect:
+
+![H0](https://latex.codecogs.com/svg.image?\left(\widetilde{\alpha}_{\textit{m}},\widetilde{f}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\alpha_{\textit{m}}^\intercal&space;m_{i}-f(z_i)\right)^2&plus;\sum_{j=1}^p&space;P_{\lambda}\left(\mid\alpha_{\textit{m}j}\mid\right),)
+
+![RSS](https://latex.codecogs.com/svg.image?RSS_1=\sum_{i=1}^n\left(y_i-\hat{\alpha}_{\textit{m}}^\intercal&space;m_{i}-\hat{\alpha}_{\textit{e}}^\intercal&space;x_{i}-\hat{f}(z_i)\right)^2,RSS_0=\sum_{i=1}^n\left(y_i-\widetilde{\alpha}_{\textit{m}}^\intercal&space;m_{i}-\widetilde{f}(z_i)\right)^2,)
+
+![F](https://latex.codecogs.com/svg.image?T_n^{\textit{DE}}=\frac{RSS_0-RSS_1}{RSS_1/(n-q)}.)
+
+
+- Wald test for indirect effect:
+
+![wald](https://latex.codecogs.com/svg.image?S_n^{\textit{IE}}=n\hat{\beta}_{\textit{e}}^\intercal\hat{\Omega}^{-1}\hat{\beta}_{\textit{e}},\;\hat{\Omega}\;\;\text{is&space;the&space;estimated&space;covariance&space;matrix}.)
+
 -------------------------------------------------------------
 
 # Deep neural network hyperparameters and structures
