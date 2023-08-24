@@ -15,12 +15,16 @@
 
 # Estimation via deep neural networks 
 - Estimation of direct effect:
+
 ![direct](https://latex.codecogs.com/svg.image?\left(\hat{\alpha}_{\textit{m}},\hat{\alpha}_{\textit{e}},\hat{f}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\alpha_{\textit{m}}^\intercal&space;m_{i}-\alpha_{\textit{e}}^\intercal&space;x_{i}-f(z_i)\right)^2&plus;\sum_{j=1}^p&space;P_{\lambda}\left(\mid\alpha_{\textit{m}j}\mid\right))
+
 ![Scad](https://latex.codecogs.com/svg.image?&space;P'_{\lambda}(t)=\lambda\left(\mathbb{I}\left(t\leq\lambda\right)&plus;\frac{\left(a\lambda-t\right)_&plus;}{\left(a-1\right)\lambda}\mathbb{I}\left(t>\lambda\right)\right),a=3.7)
 
 - Estimation of indirect effect:
-- ![total](https://latex.codecogs.com/svg.image?\left(\hat{\theta}_{\textit{e}},\hat{h}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\theta_{\textit{e}}^\intercal&space;x_{i}-h(z_i)\right)^2)
-- ![indirect](https://latex.codecogs.com/svg.image?\hat{\beta}_{\textit{e}}=\hat{\theta}_{\textit{e}}-\hat{\alpha}_{\textit{e}})
+
+  ![total](https://latex.codecogs.com/svg.image?\left(\hat{\theta}_{\textit{e}},\hat{h}\right)={argmin}\frac{1}{n}\sum_{i=1}^n\left(y_i-\theta_{\textit{e}}^\intercal&space;x_{i}-h(z_i)\right)^2)
+
+  ![indirect](https://latex.codecogs.com/svg.image?\hat{\beta}_{\textit{e}}=\hat{\theta}_{\textit{e}}-\hat{\alpha}_{\textit{e}})
 
 -------------------------------------------------------------
 # Inference via deep neural networks
