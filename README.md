@@ -1,4 +1,4 @@
-# DP2LM: Deep Neural Network based penalized partially linear mediation model with high-dimensional mediators
+# DP2LM: Deep neural network based penalized partially linear mediation model with high-dimensional mediators
 ------------------------------------------------
 
 # Mediation model
