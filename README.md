@@ -1,8 +1,16 @@
 # DP2LM: Deep Neural Network based penalized partially linear mediation model with high-dimensional mediators
 ------------------------------------------------
 
-# Functional Data Regression Model
-![model](https://latex.codecogs.com/svg.image?&space;y=\alpha_{\textit{m}}^\intercal&space;m&plus;\alpha_{\textit{e}}^\intercal&space;x&plus;f\left(z\right)&plus;\epsilon_1,)
+# Mediation model
+- Outcome-mediator model
+![model1](https://latex.codecogs.com/svg.image?&space;y=\alpha_{\textit{m}}^\intercal&space;m&plus;\alpha_{\textit{e}}^\intercal&space;x&plus;f\left(z\right)&plus;\epsilon_1.)
+- Mediator-exposure model
+![model2](https://latex.codecogs.com/svg.image?m=\gamma_{\textit{e}}^\intercal&space;x&plus;g\left(z\right)&plus;\epsilon_2.)
+
+
+
+
+
 - ![X](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BX%7D_%7Bj%7D%5Cin%20%5Cmathbb%7BR%7D%5Ed): fixed vector of length d for the j-th observational point
 - ![Y](https://latex.codecogs.com/gif.latex?Y_%7Bij%7D): scalar random variable for the i-th subject and j-th observational point
 - ![error](https://latex.codecogs.com/gif.latex?%5Cepsilon_%7Bi%7D%5Cleft%28%5Cmathbf%7BX%7D_j%5Cright%29): error random process with measurement error for the i-th subject and j-th observational point
