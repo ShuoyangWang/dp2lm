@@ -34,7 +34,7 @@
 
 ![RSS](https://latex.codecogs.com/svg.image?RSS_1=\sum_{i=1}^n\left(y_i-\hat{\alpha}_{\textit{m}}^\intercal&space;m_{i}-\hat{\alpha}_{\textit{e}}^\intercal&space;x_{i}-\hat{f}(z_i)\right)^2,RSS_0=\sum_{i=1}^n\left(y_i-\widetilde{\alpha}_{\textit{m}}^\intercal&space;m_{i}-\widetilde{f}(z_i)\right)^2,)
 
-![F](https://latex.codecogs.com/svg.image?T_n^{\textit{DE}}=\frac{RSS_0-RSS_1}{RSS_1/(n-q)}\sim\chi^2_q) under null hypothesis.
+![F](https://latex.codecogs.com/svg.image?T_n^{\textit{DE}}=\frac{RSS_0-RSS_1}{RSS_1/(n-q)}\sim\chi^2_q\enspace\text{under}\enspace{H_0}) 
 
 
 - Wald test for indirect effect:
