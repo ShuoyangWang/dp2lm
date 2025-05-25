@@ -231,17 +231,21 @@ DP2LM_DE_test <- function(data,length,width,dropout,epoch,batch,directory,lam_le
   
   
   
-  weights.all=c()
+  weights.all=DE.est=c()
   if(length==2){
     for(i in 5:(p+4)){
       weights.all=c(weights.all, var.weights1[[i]])
     }
-    DE.est=var.weights1[[p+5]]
+    for(i in (p+5):(p+q+4)){
+      DE.est=c(DE.est, var.weights1[[i]])
+    }
   }else if(length==3){
     for(i in 7:(p+6)){
       weights.all=c(weights.all, var.weights1[[i]])
     }
-    DE.est=var.weights1[[p+7]]
+    for(i in (p+7):(p+q+6)){
+      DE.est=c(DE.est, var.weights1[[i]])
+    }
   }
   
   
@@ -410,17 +414,21 @@ DP2LM_DE_test <- function(data,length,width,dropout,epoch,batch,directory,lam_le
   
   
   
-  weights.all=c()
+  weights.all=DE.est=c()
   if(length==2){
     for(i in 5:(p+4)){
       weights.all=c(weights.all, var.weights1[[i]])
     }
-    DE.est=var.weights1[[p+5]]
+    for(i in (p+5):(p+q+4)){
+      DE.est=c(DE.est, var.weights1[[i]])
+    }
   }else if(length==3){
     for(i in 7:(p+6)){
       weights.all=c(weights.all, var.weights1[[i]])
     }
-    DE.est=var.weights1[[p+7]]
+    for(i in (p+7):(p+q+6)){
+      DE.est=c(DE.est, var.weights1[[i]])
+    }
   }
   
   
